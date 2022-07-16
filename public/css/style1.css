@@ -1,0 +1,96 @@
+body {
+  font-family: "Viga", sans-serif;
+}
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+.tombol {
+  text-transform: uppercase;
+  border-radius: 40px;
+}
+.navbar-brand,
+.nav-link,
+.btn {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+.jumbotron {
+  height: 200px;
+  background-image: url(/img/perpustakaan2.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.jumbotron::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
+.jumbotron .container {
+  position: relative;
+  z-index: 1;
+}
+.info-panel {
+  background-color: white;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  margin-top: -80px;
+  padding: 25px;
+}
+.info-panel img {
+  width: 90px;
+  height: 90px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.info-panel h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.buku {
+  border-radius: 12px;
+  margin-top: -80px;
+  padding: 25px;
+}
+.buku img {
+  width: 120px;
+  height: 160px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.buku h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 10px;
+  margin-top: 40px;
+}
+
+@media (min-width: 992px) {
+  .nav-link {
+    margin-right: 30px;
+    text-transform: uppercase;
+  }
+  .navbar-brand,
+  .nav-link,
+  .btn {
+    color: white !important;
+  }
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid blue;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+  .jumbotron {
+    margin-top: -70px;
+  }
+}
